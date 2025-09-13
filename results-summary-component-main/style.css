@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Epunda+Sans:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,500;1,500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: var(--pale-blue);
+    
+    
+}
+:root{
+    /* color */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%) ;
+
+    /* background */
+    --pale-blue:hsl(221, 100%, 96%);
+    --light-slate:hsl(252, 100%, 67%);
+    --light-royal:hsl(241, 81%, 54%) ;
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0) ; 
+}
+
+
+p,h2,span{
+    color: white;
+}
+span{
+    font-size: 14px;
+}
+p,span, .head-header{
+    opacity: 0.6;
+}
+p , button{
+    font-size: 18px;
+}
+
+h2{
+    font-size:clamp(20px , 2vw , 30px) ;
+}
+
+
+
+.component{
+    width: 700px;
+    height: 500px;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 20px;
+}
+.component .result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom ,var( --light-slate) ,var(--light-royal));
+    padding: 2rem 2rem;
+    text-align: center;
+    border-radius: 20px;
+}
+.component .main {
+    background: linear-gradient( to top, var(--light-royal) , var(--violet-blue));
+    padding: 3rem 4rem;
+    border-radius: 50%;
+}
+.component .main .main-degree{
+    margin-bottom: 10px;
+    font-size: 50px;
+   
+}
+.component .foot h2{
+    margin-bottom: 10px;
+}
+
+
+.component .summary{
+    background-color: white;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+}
+
+.component .summary .summary-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+.summary-content .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.card .content , .card .degree{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.summary button{
+    padding:15px 10px;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
+.card img , .card p{
+    margin-right: 5px;
+    
+}
+.summary  p ,.summary  h2 , .summary span{
+    color: black;
+}
+
+.Reaction{
+    background-color: hsl(0, 39%, 93%);
+}
+ .Memory{
+    background: hsla(221, 100%, 96%, .1);
+   
+}
+.Verbal{
+    background: hsla(166, 100%, 37%, 0.1);
+}
+.Visual{
+    background:hsla(242, 61%, 89% ,.5);
+}
+
+.Reaction .content p{
+    color: var(--Light-red);
+}
+.Memory .content p{
+    color: var(--Orangey-yellow);
+}
+.Verbal .content p{
+    color: var(--Green-teal);
+}
+.Visual .content p{
+    color: var(--Cobalt-blue);
+}
+
+
+@media (max-width:31.25rem) {
+    .component{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: max(2rem , 5rem);
+        background-color: white;
+    }
+    .component .result{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .result .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        width: 10rem;
+        height: 10rem;
+        
+    }
+    .component .summary{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        gap: 2rem;
+    }
+    .component .summary-content{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        align-items: start;
+        
+    }
+}
