@@ -173,7 +173,7 @@ h2{
         row-gap: 2rem;
         border-top-right-radius: 0px;
         border-top-left-radius: 0px;
-       box-shadow: 0 5px  20px 2px hsla(166, 100%, 37% );
+       box-shadow: 0 10px  30px  hsla(166, 100%, 37% );
        z-index: 1000;
     }
     .result .main{
