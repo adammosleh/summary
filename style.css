@@ -118,6 +118,7 @@ h2{
     color: white;
     border-radius: 25px;
     border: none;
+    cursor: pointer;
 }
 .card img , .card p{
     margin-right: 5px;
@@ -172,6 +173,8 @@ h2{
         row-gap: 2rem;
         border-top-right-radius: 0px;
         border-top-left-radius: 0px;
+       box-shadow: 0 5px  20px 2px hsla(166, 100%, 37% );
+       z-index: 1000;
     }
     .result .main{
         display: flex;
@@ -192,7 +195,7 @@ h2{
         gap: 2rem;
     }
     .component .summary-content{
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: auto;
         align-items: start;
