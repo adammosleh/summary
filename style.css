@@ -126,20 +126,21 @@ h2{
 }
 .summary  p ,.summary  h2 , .summary span{
     color: black;
+    font-weight: bold;
 }
 
 .Reaction{
-    background-color: hsl(0, 39%, 93%);
+    background-color:hsla(0, 39%, 93%, 0.3);
 }
  .Memory{
-    background: hsla(221, 100%, 96%, .1);
+    background: hsla(221, 100%, 96%, 0.3);
    
 }
 .Verbal{
     background: hsla(166, 100%, 37%, 0.1);
 }
 .Visual{
-    background:hsla(242, 61%, 89% ,.5);
+    background:hsla(242, 61%, 89% ,.3);
 }
 
 .Reaction .content p{
